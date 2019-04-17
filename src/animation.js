@@ -3,7 +3,7 @@ import { createAnimation, Stagger } from "./airframe/airframe";
 import easing from "./airframe/easing";
 
 const dx = 250;
-const offOpacity = 0.6;
+const offOpacity = 0.8;
 
 /* @jsx createAnimation */
 
@@ -12,7 +12,7 @@ const offOpacity = 0.6;
 const SlideToLeft = () => (
   <tween
     from={{ x: 0, opacity: 1 }}
-    to={{ x: -dx, opacity: 0 }}
+    to={{ x: -dx, opacity: 0.75 }}
     ease={easing.easeInQuad}
   />
 );
@@ -29,7 +29,7 @@ function ShrinkHeight() {
 
 const SlideFromRight = () => (
   <tween
-    from={{ x: dx, opacity: 0 }}
+    from={{ x: dx, opacity: 0.75 }}
     to={{ x: 0, opacity: 1 }}
     ease={easing.easeOutQuad}
   />

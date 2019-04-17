@@ -1,6 +1,6 @@
 import React from "react";
 import animation from "./animation";
-import theme from "./nightOwl";
+import theme from "./duotoneLight";
 import Scroller from "./scroller";
 
 const themeStylesByType = Object.create(null);
@@ -46,7 +46,8 @@ function Slide({ lines, styles, changes }) {
         margin: 0,
         height: "100%",
         width: "100%",
-        boxSizing: "border-box"
+        boxSizing: "border-box",
+        opacity: 1
       }}
     >
       <Scroller

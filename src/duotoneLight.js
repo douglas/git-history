@@ -5,44 +5,43 @@
 
 var theme /*: PrismTheme */ = {
   plain: {
-    backgroundColor: "#faf8f5",
-    color: "#728fcb"
+    backgroundColor: "#fefef9",
+    color: "#0044d0"
   },
   styles: [
     {
       types: ["comment", "prolog", "doctype", "cdata", "punctuation"],
       style: {
-        color: "#b6ad9a"
+        color: "#b28e44",
       }
     },
     {
       types: ["namespace"],
       style: {
-        opacity: 0.7
       }
     },
     {
       types: ["tag", "operator", "number"],
       style: {
-        color: "#063289"
+        color: "#063289",
       }
     },
     {
       types: ["property", "function"],
       style: {
-        color: "#b29762"
+        color: "#ac7a18",
       }
     },
     {
       types: ["tag-id", "selector", "atrule-id"],
       style: {
-        color: "#2d2006"
+        color: "#2d2006",
       }
     },
     {
       types: ["attr-name"],
       style: {
-        color: "#896724"
+        color: "#805a0f",
       }
     },
     {
@@ -61,43 +60,43 @@ var theme /*: PrismTheme */ = {
         "at-rule"
       ],
       style: {
-        color: "#728fcb"
+        color: "#1950c1",
       }
     },
     {
       types: ["placeholder", "variable"],
       style: {
-        color: "#93abdc"
+        color: "#1853ca",
       }
     },
     {
       types: ["deleted"],
       style: {
-        textDecorationLine: "line-through"
+        textDecorationLine: "line-through",
       }
     },
     {
       types: ["inserted"],
       style: {
-        textDecorationLine: "underline"
+        textDecorationLine: "underline",
       }
     },
     {
       types: ["italic"],
       style: {
-        fontStyle: "italic"
+        fontStyle: "italic",
       }
     },
     {
       types: ["important", "bold"],
       style: {
-        fontWeight: "bold"
+        fontWeight: "bold",
       }
     },
     {
       types: ["important"],
       style: {
-        color: "#896724"
+        color: "#765513",
       }
     }
   ]
