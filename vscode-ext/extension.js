@@ -26,7 +26,7 @@ function activate(context) {
 
         const panel = vscode.window.createWebviewPanel(
           "gfh",
-          `${path.basename(currentPath)} (Git History)`,
+          `${path.basename(currentPath)} (Git History Light)`,
           vscode.ViewColumn.One,
           {
             enableScripts: true,
@@ -64,13 +64,17 @@ function activate(context) {
         panel.webview.onDidReceiveMessage(
           message => {
             switch (message.command) {
-              case "commits":
+              case "commits": {
                 const { path, last = 15, before = null } = message.params;
                 getCommits(path, last, before)
                   .then(commits => {
                     panel.webview.postMessage(commits);
                   })
                   .catch(console.error);
+                break;
+              }
+              default: {
+              }
             }
           },
           undefined,
